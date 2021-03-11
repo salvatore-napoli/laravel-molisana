@@ -72,29 +72,38 @@ body {
 
 .footer {
   color: #808080;
-  justify-content: center;
   padding-top: 50px;
 }
-.footer .website-info {
+.footer-content {
+  justify-content: center;
+}
+.footer-content .website-info {
   padding-right: 80px;
 }
-.footer .website-info .logo {
+.footer-content .website-info .logo {
   height: 130px;
 }
-.footer .website-info .logo img {
+.footer-content .website-info .logo img {
   height: 100%;
 }
-.footer .website-info .contacts {
+.footer-content .website-info .contacts {
   flex-direction: column;
   font-size: 14px;
 }
-.footer .links {
+.footer-content .links {
   padding-right: 180px;
 }
-.footer .links-category {
+.footer-content .links-category {
   font-weight: normal;
   padding: 20px 0;
 }
-.footer .links-list .item {
+.footer-content .links-list .item {
   padding-bottom: 10px;
+}
+.footer-bg {
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
 }
