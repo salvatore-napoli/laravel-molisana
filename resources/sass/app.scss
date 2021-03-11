@@ -33,5 +33,30 @@
 }
 
 .main {
-	
+	background-image: $img-1;
+	padding: 50px 150px 25px;
+
+	.pasta-category {
+		padding-bottom: 10px;
+
+		.pasta-title {
+			color: $text-color-1;
+			font-size: 27px;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+		}
+
+		.pasta {
+			flex-wrap: wrap;
+
+			&-item {
+				width: calc((100% / 3) - 8px);
+				margin: 3px 8px 0 0;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 }

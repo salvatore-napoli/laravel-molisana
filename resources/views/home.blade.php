@@ -160,7 +160,48 @@ $array = json_decode($data, true);
     </header>
 
     <main class="main">
+      <section class="pasta-category">
+        <h2 class="pasta-title">le lunghe</h2>
+        <div class="pasta flex">
+          @foreach ($array as $pasta_type)
+            @if ($pasta_type['tipo'] === 'lunga')
+            <div class="pasta-item">
+              <img src="@php echo $pasta_type['src'] @endphp" alt="tipo di pasta" />
+            </div>
+            @endif
+          @endforeach
+        </div>
+      </section>
 
+      <section class="pasta-category">
+        <h2 class="pasta-title">le corte</h2>
+        <div class="pasta flex">
+          @foreach ($array as $pasta_type)
+            @if ($pasta_type['tipo'] === 'corta')
+            <div class="pasta-item">
+              <img src="@php echo $pasta_type['src'] @endphp" alt="tipo di pasta" />
+            </div>
+            @endif
+          @endforeach
+        </div>
+      </section>
+
+      <section class="pasta-category">
+        <h2 class="pasta-title">le cortissime</h2>
+        <div class="pasta flex">
+          @foreach ($array as $pasta_type)
+            @if ($pasta_type['tipo'] === 'cortissima')
+            <div class="pasta-item">
+              <img src="@php echo $pasta_type['src'] @endphp" alt="tipo di pasta" />
+            </div>
+            @endif
+          @endforeach
+        </div>
+      </section>
     </main>
+
+    <footer>
+      
+    </footer>
   </body>
 </html>
