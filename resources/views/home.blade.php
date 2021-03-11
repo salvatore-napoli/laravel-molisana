@@ -145,11 +145,11 @@ $array = json_decode($data, true);
       <section class="pasta-category">
         <h2 class="pasta-title">le lunghe</h2>
         <div class="pasta flex">
-          @foreach ($array as $pasta_type)
+          @foreach ($array as $key => $pasta_type)
             @if ($pasta_type['tipo'] === 'lunga')
             <div class="pasta-item">
-              <a href="#">
-                <img src="@php echo $pasta_type['src'] @endphp" alt="tipo di pasta" />
+              <a href="products/{{$key}}">
+                <img src="{{$pasta_type['src']}}" alt="tipo di pasta" />
               </a>
             </div>
             @endif
@@ -160,11 +160,11 @@ $array = json_decode($data, true);
       <section class="pasta-category">
         <h2 class="pasta-title">le corte</h2>
         <div class="pasta flex">
-          @foreach ($array as $pasta_type)
+          @foreach ($array as $key => $pasta_type)
             @if ($pasta_type['tipo'] === 'corta')
             <div class="pasta-item">
-              <a href="#">
-                <img src="@php echo $pasta_type['src'] @endphp" alt="tipo di pasta" />
+              <a href="products/{{$key}}">
+                <img src="{{$pasta_type['src']}}" alt="tipo di pasta" />
               </a>
             </div>
             @endif
@@ -175,11 +175,11 @@ $array = json_decode($data, true);
       <section class="pasta-category">
         <h2 class="pasta-title">le cortissime</h2>
         <div class="pasta flex">
-          @foreach ($array as $pasta_type)
+          @foreach ($array as $key => $pasta_type)
             @if ($pasta_type['tipo'] === 'cortissima')
             <div class="pasta-item">
-              <a href="#">
-                <img src="@php echo $pasta_type['src'] @endphp" alt="tipo di pasta" />
+              <a href="products/{{$key}}">
+                <img src="{{$pasta_type['src']}}" alt="tipo di pasta" />
               </a>
             </div>
             @endif

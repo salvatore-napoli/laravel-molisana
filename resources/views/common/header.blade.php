@@ -1,6 +1,6 @@
 <header class="header flex">
 	<div class="logo">
-		<img src="img/marchio-sito-test.png" alt="logo" />
+		<img src="../img/marchio-sito-test.png" alt="logo" />
 	</div>
 
 	<nav class="website-nav">

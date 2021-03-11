@@ -2,7 +2,7 @@
 	<div class="footer-content flex">
 		<div class="website-info">
 			<div class="logo">
-				<img src="img/marchio-sito-test.png" alt="logo" />
+				<img src="../img/marchio-sito-test.png" alt="logo" />
 			</div>
 			<div class="contacts flex">
 				<span>Ragione sociale: La Molisana S.P.A.</span>

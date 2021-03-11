@@ -1,0 +1,37 @@
+@import "_variables";
+@import "_common";
+@import "app";
+
+
+.product-main {
+	background-color: $bg-color-2;
+	padding: 50px 150px 25px;
+	align-items: center;
+	flex-direction: column;
+
+	.product-title {
+		color: $text-color-1;
+	}
+
+	.pasta-view {
+		height: 400px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.package-view {
+		height: 400px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.product-description {
+		color: $text-color-1;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}

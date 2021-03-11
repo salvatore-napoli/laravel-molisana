@@ -131,7 +131,7 @@ $array = json_decode($data, true);
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/products.css')}}">
     <title>La Molisana - Prodotti</title>
 
     <!-- Fonts -->
@@ -141,8 +141,18 @@ $array = json_decode($data, true);
   <body>
     @include('common/header')
 
-		<main>
+		<main class="product-main flex">
+			<h2 class="product-title">{{$array[$productId]['titolo']}}</h2>
 
+			<div class="pasta-view">
+				<img src="{{$array[$productId]['src-h']}}" alt="pasta" />
+			</div>
+
+			<div class="package-view">
+				<img src="{{$array[$productId]['src-p']}}" alt="package" />
+			</div>
+
+			<div class="product-description">@php echo $array[$productId]['descrizione']; @endphp</div>
 		</main>
 
 		@include('common/footer')

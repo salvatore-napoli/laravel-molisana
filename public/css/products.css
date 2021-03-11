@@ -1,0 +1,163 @@
+/* COLORS */
+/* end COLORS */
+/* IMAGES */
+/* end IMAGES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.no-bullet-ul {
+  list-style-type: none;
+}
+
+.no-decoration-text {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* COLORS */
+/* end COLORS */
+/* IMAGES */
+/* end IMAGES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.no-bullet-ul {
+  list-style-type: none;
+}
+
+.no-decoration-text {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  align-items: center;
+  flex-direction: column;
+}
+.header .logo {
+  height: 110px;
+  margin: 40px 0;
+}
+.header .logo img {
+  height: 100%;
+}
+.header .website-nav-list .navigator {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 20px 10px;
+}
+.header .website-nav-list .current-section {
+  background-color: #B1EDD4;
+}
+
+.main {
+  background-image: url("../img/home-bg.jpg");
+  padding: 50px 150px 25px;
+}
+.main .pasta-category {
+  padding-bottom: 10px;
+}
+.main .pasta-category .pasta-title {
+  color: #002d73;
+  font-size: 27px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.main .pasta-category .pasta {
+  flex-wrap: wrap;
+}
+.main .pasta-category .pasta-item {
+  width: calc((100% / 3) - 8px);
+  margin: 3px 8px 0 0;
+}
+.main .pasta-category .pasta-item img {
+  width: 100%;
+}
+
+.footer {
+  color: #808080;
+  padding-top: 50px;
+}
+.footer-content {
+  justify-content: center;
+}
+.footer-content .website-info {
+  padding-right: 80px;
+}
+.footer-content .website-info .logo {
+  height: 130px;
+}
+.footer-content .website-info .logo img {
+  height: 100%;
+}
+.footer-content .website-info .contacts {
+  flex-direction: column;
+  font-size: 14px;
+}
+.footer-content .links {
+  padding-right: 180px;
+}
+.footer-content .links-category {
+  font-weight: normal;
+  padding: 20px 0;
+}
+.footer-content .links-list .item {
+  padding-bottom: 10px;
+}
+.footer-bg {
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+
+.product-main {
+  background-color: #B7DAE5;
+  padding: 50px 150px 25px;
+  align-items: center;
+  flex-direction: column;
+}
+.product-main .product-title {
+  color: #002d73;
+}
+.product-main .pasta-view {
+  height: 400px;
+}
+.product-main .pasta-view img {
+  height: 100%;
+}
+.product-main .package-view {
+  height: 400px;
+}
+.product-main .package-view img {
+  height: 100%;
+}
+.product-main .product-description {
+  color: #002d73;
+  font-size: 20px;
+  line-height: 1.5;
+}
