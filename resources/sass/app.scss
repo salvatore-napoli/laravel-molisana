@@ -1,1 +1,37 @@
-//
+@import "_variables";
+@import "_common";
+
+.header {
+	align-items: center;
+	flex-direction: column;
+
+	.logo {
+		height: 110px;
+		margin: 40px 0;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.website-nav {
+
+		&-list {
+
+			.navigator {
+				font-weight: bold;
+				font-size: 20px;
+				margin: 0 10px;
+				padding: 20px 10px;
+			}
+
+			.current-section {
+				background-color: $bg-color-1;
+			}
+		}
+	}
+}
+
+.main {
+	
+}

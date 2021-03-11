@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+	display: flex;
+}
+
+.no-bullet-ul {
+	list-style-type: none;
+}
+
+.no-decoration-text {
+	text-decoration: none;
+	color: inherit;
+}

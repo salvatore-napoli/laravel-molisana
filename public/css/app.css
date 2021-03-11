@@ -1,1 +1,47 @@
+/* COLORS */
+/* end COLORS */
+/* IMAGES */
+/* end IMAGES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.no-bullet-ul {
+  list-style-type: none;
+}
+
+.no-decoration-text {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  align-items: center;
+  flex-direction: column;
+}
+.header .logo {
+  height: 110px;
+  margin: 40px 0;
+}
+.header .logo img {
+  height: 100%;
+}
+.header .website-nav-list .navigator {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 20px 10px;
+}
+.header .website-nav-list .current-section {
+  background-color: #B1EDD4;
+}
