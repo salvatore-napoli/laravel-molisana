@@ -20,7 +20,7 @@
           @foreach ($pastaArray as $key => $pasta_type)
             @if ($pasta_type['tipo'] === 'lunga')
             <div class="pasta-item">
-              <a href="products/{{$key}}">
+              <a href="products/{{$key + 1}}">
                 <img src="{{$pasta_type['src']}}" alt="tipo di pasta" />
               </a>
             </div>
@@ -35,7 +35,7 @@
           @foreach ($pastaArray as $key => $pasta_type)
             @if ($pasta_type['tipo'] === 'corta')
             <div class="pasta-item">
-              <a href="products/{{$key}}">
+              <a href="products/{{$key + 1}}">
                 <img src="{{$pasta_type['src']}}" alt="tipo di pasta" />
               </a>
             </div>
@@ -50,7 +50,7 @@
           @foreach ($pastaArray as $key => $pasta_type)
             @if ($pasta_type['tipo'] === 'cortissima')
             <div class="pasta-item">
-              <a href="products/{{$key}}">
+              <a href="products/{{$key + 1}}">
                 <img src="{{$pasta_type['src']}}" alt="tipo di pasta" />
               </a>
             </div>

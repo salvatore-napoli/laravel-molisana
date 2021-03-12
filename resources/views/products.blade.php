@@ -14,17 +14,17 @@
     @include('common/header')
 
 		<main class="product-main flex">
-			<h2 class="product-title">{{$pastaArray[$productId]['titolo']}}</h2>
+			<h2 class="product-title">{{$pastaArray[$productId - 1]['titolo']}}</h2>
 
 			<div class="pasta-view">
-				<img src="{{$pastaArray[$productId]['src-h']}}" alt="pasta" />
+				<img src="{{$pastaArray[$productId - 1]['src-h']}}" alt="pasta" />
 			</div>
 
 			<div class="package-view">
-				<img src="{{$pastaArray[$productId]['src-p']}}" alt="package" />
+				<img src="{{$pastaArray[$productId - 1]['src-p']}}" alt="package" />
 			</div>
 
-			<div class="product-description"> {!! $pastaArray[$productId]['descrizione'] !!}</div>
+			<div class="product-description"> {!! $pastaArray[$productId - 1]['descrizione'] !!}</div>
 		</main>
 
 		@include('common/footer')

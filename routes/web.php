@@ -20,10 +20,16 @@ Route::get('/', function () {
     );
 });
 
-Route::get('/products/{id}', function ($id) {
-    $pasta = config('pasta');
-    return view('products',
-      ['productId' => $id,
-      'pastaArray' => $pasta]
-    );
+Route::get('/products/{id?}', function ($id = null) {
+  $pasta = config('pasta');
+  if (empty($id)) {
+    return redirect('/');
+  }
+  if ($id > count($pasta)) {
+    abort(404);
+  }
+  return view('products',
+    ['productId' => $id,
+    'pastaArray' => $pasta]
+  );
 });
