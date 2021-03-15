@@ -4,6 +4,10 @@
 	</div>
 
 	<nav class="website-nav">
+		<div class="burger-menu">
+			<i class="fas fa-bars"></i>
+		</div>
+
 		<ul class="website-nav-list no-bullet-ul flex">
 			<li class="navigator">
 				<a href="/" class="no-decoration-text">Home</a>

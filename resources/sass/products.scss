@@ -9,6 +9,9 @@
 	align-items: center;
 	flex-direction: column;
 	position: relative;
+	@media screen and (max-width: 576px) {
+		padding: 50px 50px 25px;
+	}
 
 	.product-title {
 		color: $text-color-1;
@@ -16,6 +19,9 @@
 
 	.pasta-view {
 		height: 350px;
+		@media screen and (max-width: 768px) {
+			height: 150px;
+		}
 
 		img {
 			height: 100%;
@@ -24,6 +30,9 @@
 
 	.package-view {
 		height: 450px;
+		@media screen and (max-width: 768px) {
+			height: 200px;
+		}
 
 		.prev-product {
 			@include slider-arrow;
@@ -44,5 +53,8 @@
 		color: $text-color-1;
 		font-size: 20px;
 		line-height: 1.5;
+		@media screen and (max-width: 576px) {
+			font-size: 1.9rem;
+		}
 	}
 }
