@@ -8,13 +8,14 @@
 	padding: 50px 150px 25px;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
 
 	.product-title {
 		color: $text-color-1;
 	}
 
 	.pasta-view {
-		height: 400px;
+		height: 350px;
 
 		img {
 			height: 100%;
@@ -22,10 +23,20 @@
 	}
 
 	.package-view {
-		height: 400px;
+		height: 450px;
+
+		.prev-product {
+			@include slider-arrow;
+			left: 0;
+		}
 
 		img {
 			height: 100%;
+		}
+
+		.next-product {
+			@include slider-arrow;
+			right: 0;
 		}
 	}
 

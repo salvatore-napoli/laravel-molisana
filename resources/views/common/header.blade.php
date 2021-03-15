@@ -6,7 +6,7 @@
 	<nav class="website-nav">
 		<ul class="website-nav-list no-bullet-ul flex">
 			<li class="navigator">
-				<a href="#" class="no-decoration-text">Home</a>
+				<a href="/" class="no-decoration-text">Home</a>
 			</li>
 			<li class="navigator current-section">
 				<a href="#" class="no-decoration-text">Prodotti</a>

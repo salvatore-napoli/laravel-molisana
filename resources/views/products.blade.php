@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/products.css')}}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
     <title>La Molisana - Prodotti</title>
 
     <!-- Fonts -->
@@ -21,6 +22,31 @@
 			</div>
 
 			<div class="package-view">
+				<a href="
+					@if(($productId - 1) === 0)
+						{{count($pastaArray)}}
+					@else
+						{{($productId - 1)}}
+					@endif
+					">
+					<div class="prev-product">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+				</a>
+
+				<a href="
+				@if(($productId - 1) === (count($pastaArray) - 1))
+					{{1}}
+				@else
+					{{($productId + 1)}}
+				@endif
+				">
+					<div class="next-product">
+						<i class="fas fa-chevron-right">
+						</i>
+					</div>
+				</a>
+
 				<img src="{{$pastaArray[$productId - 1]['src-p']}}" alt="package" />
 			</div>
 

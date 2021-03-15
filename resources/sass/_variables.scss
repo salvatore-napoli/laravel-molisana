@@ -1,11 +1,28 @@
 /* COLORS */
 $bg-color-1: #B1EDD4;
 $bg-color-2: #B7DAE5;
+$bg-color-3: #DCEDF2;
 $text-color-1: #002d73;
 $text-color-2: #808080;
+$text-color-3: white;
 /* end COLORS */
 
 /* IMAGES */
 $img-1: url('../img/home-bg.jpg');
 $img-2: url('../img/footer-montagne-bottom.jpg');
 /* end IMAGES */
+
+/* MIXINS */
+@mixin slider-arrow {
+	background-color: $bg-color-3;
+	color: $text-color-3;
+	position: absolute;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	width: 35px;
+	border-radius: 3px;
+	font-size: 35px;
+	transform: translate(0, 200%);
+}
+/* end MIXINS */
